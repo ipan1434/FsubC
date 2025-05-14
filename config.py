@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7196596757:AAFW-hi5fOeREMPW54YY11aTRipTh0L4VdA")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7855176952:AAHvuDnjtg0GhuN7GGRC6ddh37VQYa3Dhvc")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "28977113"))
+APP_ID = int(os.environ.get("APP_ID", "28174304"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "63bb64a177f438aab3bf92d7371d4f92")
+API_HASH = os.environ.get("API_HASH", "227eae8466b8f68565060906069ca9e5")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002076427370"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002508431767"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6769892247"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5596830979"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -44,7 +44,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6769892247").split()):
+    for x in (os.environ.get("ADMINS", "5596830979").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -65,7 +65,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(6769892247)
+ADMINS.append(5596830979)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
